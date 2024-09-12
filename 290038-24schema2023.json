@@ -1,0 +1,123 @@
+﻿{
+  "@context": ["http://www.w3.org/ns/csvw",{"@language": "cs"}],
+  "url": "290038-24data2023.zip",
+  "tableSchema": {
+    "columns": [{
+      "name": "idhod",
+      "titles": "idhod",
+      "dc:description":"unikátní identifikátor údaje Veřejné databáze ČSÚ",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "hodnota",
+      "titles": "hodnota",
+      "dc:description":"zjištěná hodnota",
+      "required": true,
+      "datatype": "number"
+    }, {
+      "name": "stapro_kod",
+      "titles": "stapro_kod",
+      "dc:description":"kód statistické proměnné ze systému SMS UKAZ, v celé datové sadě se jedná o statistickou proměnnou 6121 (počet cizinců bez azylantů) s omezením na druh pobytu: s pobytem přechodným, dlouhodobým, pobytem trvalým a dlouhodobým vízem",
+      "required": true,
+      "datatype": "string"
+    },  {
+      "name": "pohlavi_cis",
+      "titles": "pohlavi_cis",
+      "dc:description":"kód číselníku pro pohlaví",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "pohlavi_kod",
+      "titles": "pohlavi_kod",
+      "dc:description":"kód položky z číselníku pro pohlaví",
+      "required": true,
+      "datatype": "string"
+    },  {
+      "name": "stobcan_cis",
+      "titles": "stobcan_cis",
+      "dc:description":"číselník pro zemi státního občanství cizince, pokud není vyplněno, jedná se o úhrn za všechna státní občanství",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "stobcan_kod",
+      "titles": "stobcan_kod",
+      "dc:description":"kód země státního občanství cizince, pokud není vyplněno, jedná se o úhrn za všechna státní občanství",
+      "required": true,
+      "datatype": "string"
+    },   {
+      "name": "vek_cis",
+      "titles": "vek_cis",
+      "dc:description":"číselník pro věkové skupiny, pokud není vyplněno, jedná se o všechny věkové skupiny",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "vek_kod",
+      "titles": "vek_kod",
+      "dc:description":"kód číselníku pro věkové skupiny, pokud není vyplněno, jedná se o všechny věkové skupiny",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "rok",
+      "titles": "rok",
+      "dc:description":"rok (součást referenčního období) ve formátu RRRR, v příslušném roce se jedná o stav k 31.12.",
+      "required": true,
+      "datatype": "number"
+    },  {
+      "name": "vuzemi_cis",
+      "titles": "vuzemi_cis",
+      "dc:description":"kód číselníku pro referenční území (101 okres nebo 97 stát)",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "vuzemi_kod",
+      "titles": "vuzemi_kod",
+      "dc:description":"kód položky z číselníku pro referenční území, kód okresu (včetně položky 99999 pro nezjištěný okres), pro Českou republiku kód 19",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "kraj_cis",
+      "titles": "kraj_cis",
+      "dc:description":"kód číselníku pro příslušnost okresu do kraje ",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "kraj_kod",
+      "titles": "kraj_kod",
+      "dc:description":"kód kraje, kam okres patří, pro nezjištěný okres kód 9999, v případě údajů za ČR nevyplněno",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "vuzemi_txt",
+      "titles": "vuzemi_txt",
+      "dc:description":"text položky číselníku pro referenční území (okres, ČR)",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "kraj_txt",
+      "titles": "kraj_txt",
+      "dc:description":"text položky číselníku krajů (příslušnost okresu do kraje, v případě údajů za ČR nevyplněno)",
+      "required": true,
+      "datatype": "string"
+    },  {
+      "name": "pohlavi_txt",
+      "titles": "pohlavi_txt",
+      "dc:description":"text položky číselníku pro pohlaví, pokud není vyplněno, jedná se o úhrn za obě pohlaví",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "stobcan_txt",
+      "titles": "stobcan_txt",
+      "dc:description":"zkrácený text položky z číselníku zemí vyjadřující státní občanství cizince,pokud není vyplněno, jedná se o úhrn za všechna státní občanství",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "vek_txt",
+      "titles": "vek_txt",
+      "dc:description":"zkrácený text položky pro věkovou skupinu cizinců,pokud není vyplněno, jedná se o všechny věkové skupiny",
+      "required": true,
+      "datatype": "string"
+    }
+    ],
+    "primaryKey": "idhod"
+  }
+}
